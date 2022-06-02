@@ -719,7 +719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7196226, y: -5.520955, z: -10}
+  m_LocalPosition: {x: -3.7196221, y: -5.520955, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -920,7 +920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965543720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.29, y: -6.5, z: -10}
+  m_LocalPosition: {x: -6.47, y: -6.493, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1174746233}
@@ -4831,18 +4831,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1492503177816986299, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.303
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492503177816986299, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046752367282833699, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
+      propertyPath: Gun
+      value: 
+      objectReference: {fileID: 5572979867144159916}
     - target: {fileID: 4046752367282833699, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
       propertyPath: Audio
       value: 
       objectReference: {fileID: 1077292504}
     - target: {fileID: 4046752367282833699, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
-      propertyPath: DieSound
+      propertyPath: Bullet
       value: 
-      objectReference: {fileID: 8300000, guid: 10cccf9d7e4e8584b932dda440a4ad9c, type: 3}
-    - target: {fileID: 4046752367282833699, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
-      propertyPath: ExitCanvas
+      objectReference: {fileID: 665975978330342029, guid: 3e022ea34d0222e4d9973ae3831c44d8, type: 3}
+    - target: {fileID: 4417693975943705891, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
+      propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 970437301}
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 5572979868290294602, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
       propertyPath: m_Name
       value: Boogie
@@ -4853,11 +4865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5572979868290294607, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.29
+      value: -6.47
       objectReference: {fileID: 0}
     - target: {fileID: 5572979868290294607, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.5
+      value: -6.493
       objectReference: {fileID: 0}
     - target: {fileID: 5572979868290294607, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4893,3 +4905,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
+--- !u!4 &5572979867144159916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1492503177816986299, guid: 137215d1454d4d749b7be112e441dcb3, type: 3}
+  m_PrefabInstance: {fileID: 5572979867144159915}
+  m_PrefabAsset: {fileID: 0}

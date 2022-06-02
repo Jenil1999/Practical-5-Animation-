@@ -18,6 +18,8 @@ public class PlayerMovement: MonoBehaviour
 	[SerializeField] Vector2 DeathJump = new Vector2(10f, 10f);
 	[SerializeField] float RollSpeed = 30f;
 	[SerializeField] float ClimbSpeed = 10f;
+	[SerializeField] GameObject Bullet;
+	[SerializeField] Transform Gun;
 
 	float GravityScaleatStart;
 	float vertical;
@@ -45,6 +47,7 @@ public class PlayerMovement: MonoBehaviour
 			OnRoll();
 			OnClimb();
 			Die();
+			OnFire();
 	}
     private void OnRun()
     {
@@ -156,6 +159,22 @@ public class PlayerMovement: MonoBehaviour
 		}
 	}
 
+	void OnFire()
+    {
+        if (IsAlive) 
+		{
+			if (Input.GetKeyDown(KeyCode.RightControl) && anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+			{
+				anim.SetBool("Fire", true);
+				Instantiate(Bullet, Gun.position, transform.rotation);
+			}
+				
+			else
+            {
+				anim.SetBool("Fire", false);
+			}
+		}
+	}
 	public void ReloadScene()
 	{
 		SceneManager.LoadScene(0);
