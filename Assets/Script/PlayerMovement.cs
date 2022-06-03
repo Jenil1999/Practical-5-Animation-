@@ -48,6 +48,7 @@ public class PlayerMovement: MonoBehaviour
 			OnClimb();
 			Die();
 			OnFire();
+		
 	}
     private void OnRun()
     {
@@ -155,11 +156,14 @@ public class PlayerMovement: MonoBehaviour
 			anim.SetTrigger("Die");
 			Audio.mute = true;
 			AudioSource.PlayClipAtPoint(DieSound, Camera.main.transform.position , 0.1f);
-			Invoke("ReloadScene", 1f);
 		}
 	}
-
-	void OnFire()
+    public void DestroyMe()
+    {
+		Destroy(gameObject);
+		
+	}
+    void OnFire()
     {
         if (IsAlive) 
 		{
@@ -175,9 +179,10 @@ public class PlayerMovement: MonoBehaviour
 			}
 		}
 	}
-	public void ReloadScene()
-	{
-		SceneManager.LoadScene(0);
-	}
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 
 }

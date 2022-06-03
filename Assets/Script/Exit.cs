@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
     [SerializeField] float TimeDelay = 1f;
     [SerializeField] AudioClip ExitSound;
-    [SerializeField] Canvas ExitCanvas;
+    
     public AudioSource Audio;
 
     public static Exit Instant;
@@ -26,6 +26,10 @@ public class Exit : MonoBehaviour
     IEnumerator LoadNextLevel()
     {
         yield return new WaitForSecondsRealtime(TimeDelay);
-        ExitCanvas.gameObject.SetActive(true);
+        SceneManager.LoadScene(1);
+    }
+   public void PlayAgain()
+    {
+        SceneManager.LoadScene(0);
     }
 }

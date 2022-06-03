@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Practical5Animation.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ReloadScene.unity
+    guid: a461ef90d31ef474ebf4e56aa472a485
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: d002328da1d620e42b33c86008e7f051, type: 2}
